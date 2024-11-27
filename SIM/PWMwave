@@ -1,0 +1,26 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate -radix hexadecimal /mips_tb/clock
+add wave -noupdate -radix hexadecimal /mips_tb/OUT_SIGNAL
+add wave -noupdate -radix binary /mips_tb/btctl_out
+add wave -noupdate -radix hexadecimal /mips_tb/btcl0_out
+add wave -noupdate -radix hexadecimal /mips_tb/btcl1_out
+add wave -noupdate -radix decimal -radixenum symbolic -radixshowbase 0 /mips_tb/btcnt_out_verif
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {3784057 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 286
+configure wave -valuecolwidth 79
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {3636415 ps} {5493083 ps}

@@ -1,0 +1,80 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate -radix hexadecimal /mips_tb/reset
+add wave -noupdate -radix hexadecimal /mips_tb/clock
+add wave -noupdate -radix hexadecimal /mips_tb/OUT_SIGNAL
+add wave -noupdate -radix hexadecimal /mips_tb/GPI_write_data
+add wave -noupdate -radix hexadecimal /mips_tb/LEDR
+add wave -noupdate -radix hexadecimal /mips_tb/HEX0
+add wave -noupdate -radix hexadecimal /mips_tb/HEX1
+add wave -noupdate -radix hexadecimal /mips_tb/HEX2
+add wave -noupdate -radix hexadecimal /mips_tb/HEX3
+add wave -noupdate -radix hexadecimal /mips_tb/HEX4
+add wave -noupdate -radix hexadecimal /mips_tb/HEX5
+add wave -noupdate -radix hexadecimal /mips_tb/PB1
+add wave -noupdate -radix hexadecimal /mips_tb/PB2
+add wave -noupdate -radix hexadecimal /mips_tb/PB3
+add wave -noupdate -radix hexadecimal /mips_tb/GIE_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/INTR_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/INTA_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/IF_INST_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/ID_INST_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/EXE_INST_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/DM_INST_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/WB_INST_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/K1_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/TYPE_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/PC_EXE_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/SET_BTIFG_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/RETI_EX_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/RETI_ID_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/jump_occurred_DM_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/k1en_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/INTR_TMR_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/IF_TYPE_PC_EN
+add wave -noupdate -radix hexadecimal /mips_tb/IF_TYPE_PC
+add wave -noupdate -radix hexadecimal /mips_tb/pending_out
+add wave -noupdate -radix hexadecimal /mips_tb/served_out
+add wave -noupdate -radix hexadecimal /mips_tb/CS_ADRESS_ENABLE_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/DATA_BUS_MCU_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS1_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS2_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS3_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS4_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS5_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS6_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS0_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS7_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS8_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS9_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS10_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/CS11_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/ADRESS_0_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/ena_interupt_to_bus_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/TIMER_WRITE_ENA_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/GPI_write_enable_OUT
+add wave -noupdate -radix hexadecimal /mips_tb/btctl_out
+add wave -noupdate -radix hexadecimal /mips_tb/btcl0_out
+add wave -noupdate -radix hexadecimal /mips_tb/btcl1_out
+add wave -noupdate -radix hexadecimal /mips_tb/btcnt_out_verif
+add wave -noupdate -radix hexadecimal /mips_tb/btccr0_out
+add wave -noupdate -radix hexadecimal /mips_tb/btccr1_out
+add wave -noupdate -radix hexadecimal /mips_tb/ADDRESS_BUS_OUT
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+quietly wave cursor active 0
+configure wave -namecolwidth 291
+configure wave -valuecolwidth 183
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {790 ps}
